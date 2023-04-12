@@ -1,9 +1,9 @@
-InitStack(&S);      //初始化一个空栈s
-StackEmpty(S);      //判断一个栈是否为空，若栈s为空返回true，否则返回false
-Push(&S,x);         //进栈
-Pop(&S,&x);         //出栈
-GetTop(S,&x);       //读栈顶元素
-DestoryStack(&S);   //销毁栈
+InitStack(&S);                  //初始化一个空栈s
+StackEmpty(S);                  //判断一个栈是否为空，若栈s为空返回true，否则返回false
+Push(&S,x);                     //进栈
+Pop(&S,&x);                     //出栈
+GetTop(S,&x);                   //读栈顶元素
+DestoryStack(&S);               //销毁栈
 
 //栈的顺序存储
 #define MaxSize 50              //定义栈中元素最大个数
@@ -22,7 +22,7 @@ void InitStack(SqStack &S)
 bool StackEmpty(SqStack S)
 {
     if(S.top==-1)               //栈空
-        return true;    else                        //不空
+        return true;    else    //不空
         return false;
 }
 //进栈
